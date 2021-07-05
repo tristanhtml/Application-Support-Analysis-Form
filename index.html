@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Analysis</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+<div class="wrapper">
+  <div class="title">
+    Support Analysis
+  </div>
+  <div class="form">
+    <div class="input_field">
+        <label>Customer</label>
+        <input type="text" class="input">
+    </div>
+    <div class="input_field">
+        <label>Case Number</label>
+        <input type="text" class="input">
+    </div>
+    <div class="input_field">
+        <label>Customer Description / Business Impact</label>
+        <textarea class="textarea"></textarea>
+    </div>
+    <div class="input_field">
+        <label>Support Analysis</label>
+        <textarea class="textarea"></textarea>
+    </div>
+    <div class="input_field">
+        <label>Ci or CiA</label>
+        <div class="custom_select">
+            <select>
+                <option value="">Select</option>
+                <option value="Ci">Ci</option>
+                <option value="CiA">CiA</option>
+            </select>
+        </div>
+    </div>
+    <div class="input_field">
+        <label>Software Version</label>
+        <input type="text" class="input">
+    </div>
+    <div class="input_field">
+      <label>On-Prem or SaaS</label>
+      <div class="custom_select">
+            <select>
+                <option value="">Select</option>
+                <option value="On-Prem">On-Prem</option>
+                <option value="SaaS">SaaS</option>
+           </select>
+      </div>
+     </div>        
+    <div class="input_field">
+      <label>Environment</label>
+      <div class="custom_select">
+            <select>
+                <option value="">Select</option>
+                <option value="Production">Production</option>
+                <option value="Non-Production">Non-Production</option>
+           </select>
+      </div>       
+    </div>
+    <div class="input_field">
+      <label>Snapshot</label>
+      <input type="text" class="input">
+    </div>
+    <div class="input_field">
+      <label>Are you able to replicate?</label>
+      <div class="custom_select">
+            <select>
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+           </select>
+      </div>       
+    </div>
+    <div class="input_field">
+      <label>Replication Environment URL</label>
+      <input type="text" class="input">
+    </div>
+    <div class="input_field">
+      <label>Replication Steps</label>
+      <textarea class="textarea"></textarea>
+    </div>
+    <div class="input_field">
+      <label>Stack Trace / Error</label>
+      <textarea class="textarea"></textarea>
+    </div>
+    <div class="input_field">
+      <label>Case Attachments</label>
+      <textarea class="textarea"></textarea>
+    </div>
+
+<!-- Drag and Drop / Browse Images -->
+
+    <div id="drop_zone">
+      <p>Drop files to attach, or</p>
+      <input type="file" id="actual-btn" hidden/>
+      <label for="actual-btn">Browse</label>
+    </div>
+
+<!-- Download Document -->
+
+    <div class="input_field">
+        <input type="submit" value="Download Document" class="btn">
+    </div>
+  </div>
+  
+</div>
+</body>
+
+<script src="js/app.js"></script>
+
+</html>
